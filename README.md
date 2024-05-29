@@ -57,6 +57,7 @@ output_dir=./output/upocr-infer/
 
 mkdir ${output_dir}
 
+CUDA_VISIBLE_DEVICES=0 \
 torchrun \
         --master_port=3140 \
         --nproc_per_node=1 \
@@ -94,6 +95,7 @@ log_path=${output_dir}log_train.txt
 mkdir 'output'
 mkdir ${output_dir}
 
+CUDA_VISIBLE_DEVICES=0,1 \
 torchrun \
         --master_port=3140 \
         --nproc_per_node=2 \
