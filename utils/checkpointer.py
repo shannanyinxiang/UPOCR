@@ -34,8 +34,6 @@ class Checkpointer(object):
 
         if self.distributed:
             model = model.module 
-            if not discriminator is None:
-                discriminator = discriminator.module 
         
         checkpoint = {
             'model': model.state_dict(),
