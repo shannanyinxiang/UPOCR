@@ -88,11 +88,6 @@ def main(args):
         )
 
         if (epoch + 1) % args.save_interval == 0:
-            if args.dataset_file != 'multitask':
-                dl_epoch = None
-            else:
-                dl_epoch = train_dataloader.epochs
-
             checkpoint_path = os.path.join(args.output_dir, 'checkpoints', f'checkpoint{epoch:04}.pth')
             checkpointer.save(
                 checkpoint_path=checkpoint_path,
@@ -100,7 +95,7 @@ def main(args):
                 optimizer=optimizer,
                 epoch=epoch,
                 args=args,
-                dl_epoch=dl_epoch,
+                dl_epoch=train_dataloader.epochs,
             )
 
         log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
