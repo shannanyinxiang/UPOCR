@@ -69,7 +69,8 @@ torchrun \
         --eval true \
         --resume pretrained/upocr.pth \
         --eval_data_cfg_path data_configs/eval/${dataset}.yaml \
-        --visualize true
+        --visualize true \
+        --textseg_conf_thres 0.4 # Tune this argument for optimal text segmentation performance.
 ```
 Change the `dataset` variable to `scut-enstext` or `tampered-ic13` to run inference on the SCUT-EnsText or Tampered-IC13 datasets, respectively.
 
