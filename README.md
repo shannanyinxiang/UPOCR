@@ -21,7 +21,9 @@ pip install -r requirements.txt
 
 ## Datasets
 
-Download the SCUT-EnsText [[repo]](https://github.com/HCIILAB/SCUT-EnsText), TextSeg [[repo]](https://github.com/SHI-Labs/Rethinking-Text-Segmentation), and Tampered-IC13 [[repo]](https://github.com/wangyuxin87/Tampered-IC13) datasets and arrange the datasets following the file structure below.
+1. Download the SCUT-EnsText [[repo]](https://github.com/HCIILAB/SCUT-EnsText), TextSeg [[repo]](https://github.com/SHI-Labs/Rethinking-Text-Segmentation), and Tampered-IC13 [[repo]](https://github.com/wangyuxin87/Tampered-IC13) datasets. 
+2. Preprocess the SCUT-EnsText dataset following [[link]](https://github.com/shannanyinxiang/ViTEraser?tab=readme-ov-file#1-text-removal-dataset).
+3. Arrange the datasets according to the file structure below.
 ```
 data
 ├─TamperedTextDetection
