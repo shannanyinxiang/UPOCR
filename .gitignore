@@ -1,0 +1,7 @@
+__pycache__
+output
+scripts
+pretrained
+/data
+wandb
+debug

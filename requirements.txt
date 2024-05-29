@@ -1,0 +1,11 @@
+imageio==2.22.2
+matplotlib==3.5.3
+numpy==1.21.6
+opencv_python==4.6.0.66
+Pillow==9.2.0
+scikit_image==0.19.3
+scipy==1.7.3
+timm==0.6.11
+tqdm==4.64.1
+pytorch-fid==0.3.0
+wandb

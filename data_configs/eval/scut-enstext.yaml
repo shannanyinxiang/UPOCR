@@ -1,0 +1,7 @@
+TYPE: text removal
+DATA_ROOT: data/TextRemoval/
+DATASET_NAMES: ['scutens_test', ]
+MASK_FOLDER_NAME: mask
+TRANSFORM:
+  RESIZE:
+    SIZE: [512, 512] 

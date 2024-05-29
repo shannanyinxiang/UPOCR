@@ -1,0 +1,25 @@
+TYPE: text segmentation
+DATA_ROOT: data/TextSegmentation/
+DATASET_NAMES: ['textseg_train', 'textseg_val']
+TRANSFORM:
+  CONVERT_LABEL:
+    WORD_EFFECT_VALUE: 0
+    IGNORE_VALUE: 128
+  RANDOM_CROP:
+    MIN_SIZE_RATIO: 0.7
+    MAX_SIZE_RATIO: 1.0 
+    PROB: 1.0 
+  RANDOM_HORIZONTAL_FLIP:
+    PROB: 0.3
+  RANDOM_DISTORTION:
+    BRIGHTNESS: 0.5 
+    CONTRAST: 0.5
+    SATURATION: 0.5
+    HUE: 0.5
+    PROB: 0.5
+  RANDOM_ROTATE: 
+    ANGLE: 30 
+    PROB: 0.5 
+  RESIZE:
+    SIZE: [512, 512]
+    PHASE: train

@@ -1,0 +1,13 @@
+TYPE: tampered text detection
+DATA_ROOT: data/TamperedTextDetection/
+DATASET_NAMES: ['tampered-ic13_train']
+TRANSFORM:
+  RANDOM_CROP: 
+    MIN_SIZE_RATIO: 0.5
+    MAX_SIZE_RATIO: 1.0
+    PROB: 1.0
+  RANDOM_HORIZONTAL_FLIP:
+    PROB: 0.5
+  RESIZE:
+    SIZE: [512, 512]
+    PHASE: train

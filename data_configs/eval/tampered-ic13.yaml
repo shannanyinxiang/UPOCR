@@ -1,0 +1,8 @@
+TYPE: tampered text detection
+DATA_ROOT: data/TamperedTextDetection/
+DATASET_NAMES: ['tampered-ic13_test']
+ANNO_TYPE: triplet
+TRANSFORM:
+  RESIZE:
+    SIZE: [512, 512]
+    PHASE: val

@@ -1,0 +1,15 @@
+TYPE: text removal
+DATA_ROOT: data/TextRemoval/
+DATASET_NAMES: ['scutens_train', ]
+TRANSFORM:
+  RANDOM_CROP:
+    MIN_SIZE_RATIO: 0.7
+    MAX_SIZE_RATIO: 1.0
+    PROB: 0.0
+  RANDOM_HORIZONTAL_FLIP:
+    PROB: 0.3
+  RANDOM_ROTATE:
+    ANGLE: 30
+    PROB: 0.5
+  RESIZE:
+    SIZE: [512, 512] 

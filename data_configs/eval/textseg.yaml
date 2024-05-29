@@ -1,0 +1,10 @@
+TYPE: text segmentation
+DATA_ROOT: data/TextSegmentation/
+DATASET_NAMES: ['textseg_test']
+TRANSFORM:
+  CONVERT_LABEL:
+    WORD_EFFECT_VALUE: 0
+    IGNORE_VALUE: 128
+  RESIZE:
+    SIZE: [512, 512]
+    PHASE: val
