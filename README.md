@@ -57,9 +57,8 @@ output_dir=./output/upocr-infer/
 
 mkdir ${output_dir}
 
-CUDA_VISIBLE_DEVICES=9 \
 torchrun \
-        --master_port=3149 \
+        --master_port=3140 \
         --nproc_per_node=1 \
         main.py \
         --output_dir ${output_dir} \
