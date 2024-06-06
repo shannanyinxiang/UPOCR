@@ -1,4 +1,10 @@
-# UPOCR (ICML 2024)
+<div align=center>
+
+# UPOCR: Towards Unified Pixel-Level OCR Interface
+
+</div>
+
+## 🌟 Highlight
 
 The official implementation of [UPOCR: Towards Unified Pixel-Level OCR Interface](https://arxiv.org/abs/2312.02694) (ICML 2024).
 The UPOCR represents a first-of-its-kind simple-yet-effective generalist model for unified pixel-level OCR interface.
@@ -7,7 +13,7 @@ Below is the framework of UPOCR.
 
 ![UPOCR](figures/method.svg)
 
-## Environment
+## ⚒️ Environment
 
 We recommend using [Anaconda](https://www.anaconda.com/) to manage environments. Run the following commands to install dependencies.
 ```
@@ -19,7 +25,7 @@ cd UPOCR
 pip install -r requirements.txt
 ```
 
-## Datasets
+## 📊 Datasets
 
 - Download the SCUT-EnsText [[repo]](https://github.com/HCIILAB/SCUT-EnsText), TextSeg [[repo]](https://github.com/SHI-Labs/Rethinking-Text-Segmentation), and Tampered-IC13 [[repo]](https://github.com/wangyuxin87/Tampered-IC13) datasets. 
 - Preprocess the SCUT-EnsText dataset following [[link]](https://github.com/shannanyinxiang/ViTEraser?tab=readme-ov-file#1-text-removal-dataset).
@@ -49,7 +55,7 @@ data
       └─split.json
 ```
 
-## Inference
+## 📺 Inference
 
 - Download the UPOCR weights at [[link]](https://pan.baidu.com/s/1DrCOOVGykLiIC_xxRqkPOg?pwd=mdim).
 - Run the following command to perform model inference on the TextSeg dataset.
@@ -87,7 +93,7 @@ python -m pytorch_fid \
     --device cuda:0
 ```
 
-## Training
+## 🏋️ Training
 
 - Download the pre-training weights for UPOCR at [[link]](https://pan.baidu.com/s/1jLp0YwRcSJqqhNPJHnCBUQ?pwd=3bqa).
 - Run the following command for model training.
@@ -109,7 +115,7 @@ torchrun \
         --amp true | tee -a ${log_path}
 ```
 
-## Citation
+## ✅ Citation
 ```
 @inproceedings{peng2024upocr,
   title={{UPOCR}: Towards Unified Pixel-Level {OCR} Interface},
@@ -119,9 +125,12 @@ torchrun \
 }
 ```
 
-## Copyright
+## 📇 Copyright
 This repository can only be used for non-commercial research purpose.
 
 For commercial use, please contact Prof. Lianwen Jin (eelwjin@scut.edu.cn).
 
 Copyright 2024, [Deep Learning and Vision Computing Lab](http://www.dlvc-lab.net), South China University of Technology. 
+
+## ✨ Star Rising
+[![Star Rising](https://api.star-history.com/svg?repos=shannanyinxiang/UPOCR&type=Timeline)](https://star-history.com/#shannanyinxiang/UPOCR&Timeline)
